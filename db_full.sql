@@ -828,66 +828,12 @@ INSERT INTO `mydb`.`Utente` (`Username`, `Nome`, `Cognome`, `IndirizzoResidenza`
 COMMIT;
 
 
--- -----------------------------------------------------
--- Data for table `mydb`.`Annuncio`
--- -----------------------------------------------------
-START TRANSACTION;
-USE `mydb`;
-INSERT INTO `mydb`.`Annuncio` (`idAnnuncio`, `Descrizione`, `Foto`, `UltimaModifica`, `Stato`, `Categoria_Nome`, `Utente_Username`) VALUES (DEFAULT, 'bmw_320', NULL, '08/02/2020_17.25', 'vendita', 'Motori', 'utente3');
-INSERT INTO `mydb`.`Annuncio` (`idAnnuncio`, `Descrizione`, `Foto`, `UltimaModifica`, `Stato`, `Categoria_Nome`, `Utente_Username`) VALUES (DEFAULT, 'pianoforte_yamaha', NULL, '08/02/2020', 'vendita', 'Altro', 'utente3');
-INSERT INTO `mydb`.`Annuncio` (`idAnnuncio`, `Descrizione`, `Foto`, `UltimaModifica`, `Stato`, `Categoria_Nome`, `Utente_Username`) VALUES (DEFAULT, 'notebook_acer', NULL, '07/02/2020', 'vendita', 'Elettronica', 'utente3');
-INSERT INTO `mydb`.`Annuncio` (`idAnnuncio`, `Descrizione`, `Foto`, `UltimaModifica`, `Stato`, `Categoria_Nome`, `Utente_Username`) VALUES (DEFAULT, 'villa_Fiumicino', NULL, '07/02/2020', 'rimosso', 'Immobili', 'utente4');
-INSERT INTO `mydb`.`Annuncio` (`idAnnuncio`, `Descrizione`, `Foto`, `UltimaModifica`, `Stato`, `Categoria_Nome`, `Utente_Username`) VALUES (DEFAULT, 'kawasaki ninja', NULL, '07/02/2020', 'venduto', 'Motori', 'utente4');
-INSERT INTO `mydb`.`Annuncio` (`idAnnuncio`, `Descrizione`, `Foto`, `UltimaModifica`, `Stato`, `Categoria_Nome`, `Utente_Username`) VALUES (DEFAULT, 'pc_asus', NULL, '7/02/2020', 'venduto', 'Elettronica', 'utente4');
-INSERT INTO `mydb`.`Annuncio` (`idAnnuncio`, `Descrizione`, `Foto`, `UltimaModifica`, `Stato`, `Categoria_Nome`, `Utente_Username`) VALUES (DEFAULT, 'divano_2posti', NULL, '6/2/2020', 'venduto', 'Altro', 'utente3');
-
-COMMIT;
 
 
--- -----------------------------------------------------
--- Data for table `mydb`.`Contatto`
--- -----------------------------------------------------
-START TRANSACTION;
-USE `mydb`;
-INSERT INTO `mydb`.`Contatto` (`Recapito`, `Utente_Username`, `Tipo`, `Preferito`) VALUES ('10', 'utente1', 'Altro', 1);
-INSERT INTO `mydb`.`Contatto` (`Recapito`, `Utente_Username`, `Tipo`, `Preferito`) VALUES ('20', 'utente2', 'Altro', 1);
-INSERT INTO `mydb`.`Contatto` (`Recapito`, `Utente_Username`, `Tipo`, `Preferito`) VALUES ('30', 'utente3', 'Altro', 1);
-INSERT INTO `mydb`.`Contatto` (`Recapito`, `Utente_Username`, `Tipo`, `Preferito`) VALUES ('40', 'utente4', 'Altro', 1);
-INSERT INTO `mydb`.`Contatto` (`Recapito`, `Utente_Username`, `Tipo`, `Preferito`) VALUES ('admin', 'gestore', 'Altro', 1);
-
-COMMIT;
 
 
--- -----------------------------------------------------
--- Data for table `mydb`.`Segue`
--- -----------------------------------------------------
-START TRANSACTION;
-USE `mydb`;
-INSERT INTO `mydb`.`Segue` (`Annuncio_idAnnuncio`, `Follower`) VALUES (1, 'utente1');
-INSERT INTO `mydb`.`Segue` (`Annuncio_idAnnuncio`, `Follower`) VALUES (2, 'utente1');
-
-COMMIT;
 
 
--- -----------------------------------------------------
--- Data for table `mydb`.`Venduto`
--- -----------------------------------------------------
-START TRANSACTION;
-USE `mydb`;
-INSERT INTO `mydb`.`Venduto` (`Prezzo`, `Riscossione`, `Annuncio_idAnnuncio`) VALUES (13000, 0, 5);
-INSERT INTO `mydb`.`Venduto` (`Prezzo`, `Riscossione`, `Annuncio_idAnnuncio`) VALUES (100, 0, 6);
-INSERT INTO `mydb`.`Venduto` (`Prezzo`, `Riscossione`, `Annuncio_idAnnuncio`) VALUES (200, 0, 7);
-
-COMMIT;
 
 
--- -----------------------------------------------------
--- Data for table `mydb`.`Domanda`
--- -----------------------------------------------------
-START TRANSACTION;
-USE `mydb`;
-INSERT INTO `mydb`.`Domanda` (`idDomanda`, `Testo`, `Utente_Username`, `Annuncio_idAnnuncio`) VALUES (DEFAULT, 'è a coda o verticale?', 'utente1', 2);
-INSERT INTO `mydb`.`Domanda` (`idDomanda`, `Testo`, `Utente_Username`, `Annuncio_idAnnuncio`) VALUES (DEFAULT, 'diesel o benzina?', 'utente2', 1);
-
-COMMIT;
 
