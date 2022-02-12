@@ -5,7 +5,7 @@
         #include <time.h>
         #include <stdbool.h>
         #define MAX_SIZE 2000000
-        #define CURRENT_YEAR 2021
+        #define CURRENT_YEAR 2022
 
 
         char categ[46];
