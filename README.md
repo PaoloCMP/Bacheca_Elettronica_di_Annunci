@@ -12,6 +12,7 @@ Into the file "traccia.txt" there's the project specification.
 The thin client is written in C, extremely focused on what it does, less on how it does. This technical debt was necessary to meet the deadline for the exam. I'm planning to improve it later.
 
 However I tried to use as much as possible patterns like prepared-statements and stored-procedure to avoid errors and give to it a minimal level of security from sql-injections attacks. User's password are stored encrypted.
+(There are some clear credentials, just for the examination, I know it's wrong)
 
 
 <h2> Development Enviroment:</h2>
